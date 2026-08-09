@@ -2,7 +2,7 @@
    Satnam Singh Portfolio
    ========================================= */
 
-:root {
+:root {                     /*.   Storing colors into variables for later use     */
     --primary: #2563eb;
     --primary-dark: #1d4ed8;
     --dark: #0f172a;
@@ -33,12 +33,12 @@ body {
 }
 
 a {
-    color: inherit;
+    color: inherit;   /*.  Forces link to take color of its parent element     */
     text-decoration: none;
 }
 
 .container {
-    width: min(90%, var(--max-width));
+    width: min(90%, var(--max-width));    /*. min will compare both values, 90% and Max-width(1100px) and assign smallest value to width   */
     margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@ a {
 .profile-picture {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 50%;    
     overflow: hidden;
     margin-bottom: 25px;
     background: #dbeafe;
