@@ -1,35 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    <title>
-        My Portfolio
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satnam Singh - Junior Web Developer portfolio">
+    <title>Satnam Singh | Junior Web Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  
 
-<header>
-    <h1>Satnam Singh</h1>
-    <p>Full Stack Developer</p>
-</header>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Satnam Singh</a>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact Me</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-</nav>
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Hello, I'm</p>
+                    <h1>Satnam Singh</h1>
+                    <h2>Aspiring Junior Full Stack Developer</h2>
+                    <p class="hero-text">
+                        I am transitioning from a career in banking into web development,
+                        building modern and user-friendly websites and applications.
+                    </p>
 
-<section>
-    <h2>Welcome</h2>
-    <p>
-        I am a Full Stack Developer building modern web applications.
-    </p>
-</section>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="profile-picture">
+                        <img src="Profile-picture.png"  alt="Satnam Singh">
+                    </div>
+                    <p>Full Stack Developer in Progress</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">From Financial Advisor to Web Developer</h2>
+
+                <div class="about-grid">
+                    <div>
+                        <p>
+                            I completed my B.Sc. in Information Technology in 2017 and
+                            later completed a Post-Degree Diploma in Web & Mobile App
+                            Design and Development from Langara College in 2020.
+                        </p>
+                        <p>
+                            Since then, I have worked in banking as a Financial Advisor.
+                            I am now combining my technology education, professional
+                            experience, and passion for coding to transition into a
+                            career as a full stack developer.
+                        </p>
+                    </div>
+
+                    <div class="goal-card">
+                        <span class="card-icon">🎯</span>
+                        <h3>My Career Goal</h3>
+                        <p>
+                            To start my career as a <strong>Junior Web Developer</strong>
+                            and continue growing into a skilled full stack developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section section-light">
+            <div class="container">
+                <p class="section-label">Technical Skills</p>
+                <h2 class="section-title">What I'm Learning & Using</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML5</h3>
+                        <p>Semantic, accessible page structure</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS3</h3>
+                        <p>Responsive layouts and modern styling</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Interactive and dynamic web experiences</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Bootstrap</h3>
+                        <p>Currently learning responsive UI development</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>React</h3>
+                        <p>Building knowledge of component-based development</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Full Stack</h3>
+                        <p>Currently developing front-end and back-end skills</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <p class="section-label">Education & Learning</p>
+                <h2 class="section-title">My Learning Journey</h2>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="year">2017</span>
+                        <div>
+                            <h3>B.Sc. Information Technology</h3>
+                            <p>Completed in 2017</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="year">2020</span>
+                        <div>
+                            <h3>Post-Degree Diploma</h3>
+                            <p>
+                                Web & Mobile App Design and Development —
+                                Langara College
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="year">2026</span>
+                        <div>
+                            <h3>Meta Full Stack Developer Specialization</h3>
+                            <p>
+                                Front-End & Back-End from Scratch — Coursera.
+                                Course 1 completed; continuing the specialization.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="https://www.coursera.org/programs/coast-capital-member-program-9e8q8/specializations/meta-full-stack-developer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Specialization
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate -->
+        <section class="section section-light">
+            <div class="container certificate-grid">
+                <div>
+                    <p class="section-label">Certification</p>
+                    <h2 class="section-title">Meta Course 1 Certificate</h2>
+                    <p>
+                        I have completed the first course in the Meta Full Stack
+                        Developer Specialization on Coursera.
+                    </p>
+
+                    <!-- Replace the # below with your actual certificate verification URL. -->
+                    <a
+                        href="https://www.coursera.org/account/accomplishments/verify/M00US8QYY6DW"
+                        class="btn btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Verify Certificate
+                    </a>
+                </div>
+
+               <div class="certificate-placeholder">
+                    <img
+                        src="course1.jpg"
+                        alt="Satnam Singh Meta Full Stack Developer Course Certificate"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <p class="section-label">Portfolio</p>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-intro">
+                    Projects will be added here as I continue building my full stack
+                    development portfolio.
+                </p>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-number">01</div>
+                        <h3>Project Coming Soon</h3>
+                        <p>
+                            A web project built with HTML, CSS and JavaScript.
+                            Project details and a live demo will be added soon.
+                        </p>
+                        <span class="project-status">In Progress</span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">02</div>
+                        <h3>React Project Coming Soon</h3>
+                        <p>
+                            A React application demonstrating component-based
+                            development and modern front-end skills.
+                        </p>
+                        <span class="project-status">Planned</span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">03</div>
+                        <h3>Full Stack Project Coming Soon</h3>
+                        <p>
+                            A complete application demonstrating front-end and
+                            back-end development skills.
+                        </p>
+                        <span class="project-status">Planned</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-content">
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">Let's Connect</h2>
+                <p>
+                    I am open to opportunities for Junior Web Developer roles and
+                    would be happy to connect.
+                </p>
+
+                <div class="contact-links">
+                    <a href="tel:+17785122565">
+                        <span>Phone</span>
+                        778-512-2565
+                    </a>
+
+                    <a href="mailto:sonuthandi85@gmail.com">
+                        <span>Email</span>
+                        sonuthandi85@gmail.com
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/satnam-singh19"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>LinkedIn</span>
+                        linkedin.com/in/satnam-singh19
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Satnam Singh. All rights reserved.</p>
+            <p>Built with HTML & CSS.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
